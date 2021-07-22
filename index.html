@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice selfie app c-98</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/brands.min.js" integrity="sha512-vefaKmSAX3XohXhN50vLfnK12TPIO+4uRpHjXVkX726CqbicEiAQGRzsMTE+EpLkBk4noUcUYu6AQ5af2vfRLA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+</head>
+<body>
+    <center>
+    <a href="" id="link" download="selfie_image.png"></a>
+    <h1>Voice to Text and Selfie</h1>
+    <h3 style="color: rgb(64, 170, 14); font-weight: 800; font-size: 35px;">Please allow microphone/camera when the pop-up appear, if not please check your site settings</h3>
+
+    <div class="form-group">
+        <h3> Say these words for a selfie "Take my selfie" </h3>
+        <label>Your Voice ouput is going to be displayed here</label>
+        <br><br>
+        <textarea id="Text_Box" class="form-control" readonly="true"> Text Box</textarea>
+        <br><br>
+        <button class="btn btn-success" onclick="start()"><i class="fas fa-microphone    "></i></button>
+    </div>
+    <br><br>
+    <label>Your camera is going to be displayed here, Pick your phone and say "Take my selfie"</label>
+    <div id="camera"></div>
+    
+    <br><br>
+    <label>Picture taken will be displayed here</label>
+    <div id="result"></div>
+    </center>
+</body>
+<script src="script.js"></script>
+</html>
